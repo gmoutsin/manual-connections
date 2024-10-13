@@ -20,6 +20,15 @@
 # SOFTWARE.
 
 # Check if terminal allows output, if yes, define colors for output
+
+DIP_TOKEN=none
+PIA_PF=true
+DISABLE_IPV6=yes
+AUTOCONNECT=true
+VPN_PROTOCOL=wireguard
+PIA_DNS=false
+
+
 if [[ -t 1 ]]; then
   ncolors=$(tput colors)
   if [[ -n $ncolors && $ncolors -ge 8 ]]; then
